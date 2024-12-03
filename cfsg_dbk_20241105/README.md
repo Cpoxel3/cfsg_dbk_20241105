@@ -20,6 +20,10 @@ Esta guía te ayudará a crear un sistema de inicio de sesión utilizando Larave
 ### **Configurar la Base de Datos**
 
 1. Abre el archivo `.env` y ajusta los siguientes parámetros:
+2. ejecute uno de los siguientes comandos:
+o composer create-project --prefer-dist laravel/laravel jjcf_dbk_20241105
+o composer create-project laravel/laravel jjcf_dbk_20241105
+
 
    ```env
    DB_CONNECTION=mysql
@@ -30,7 +34,7 @@ Esta guía te ayudará a crear un sistema de inicio de sesión utilizando Larave
    DB_PASSWORD=tu_contraseña
    ```
 
-2. Verifica la conexión y crea las tablas necesarias en tu base de datos.
+3. Verifica la conexión y crea las tablas necesarias en tu base de datos.
 
    - Si no existen migraciones, crea una para la tabla `users`:
      ```bash
